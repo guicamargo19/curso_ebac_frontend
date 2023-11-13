@@ -39,9 +39,14 @@ header h1{
     color: whitesmoke;
 }
 
-header li a {
+header a {
     color: whitesmoke;
     text-decoration: none;
+}
+
+header a:hover {
+    color: darkgray;
+    text-decoration: underline;
 }
 
 .container {
@@ -105,7 +110,11 @@ section h2 {
 }
 
 #sports .articles article a {
-    background-color: rgba(20, 200, 20, 0.9);
+    background-color: rgba(20, 200, 20, 0.7);
+}
+
+#sports .articles article a:hover {
+    background-color: rgba(20, 200, 20, 1);
 }
 
 #economy {
@@ -113,7 +122,11 @@ section h2 {
 }
 
 #economy .articles article a {
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: rgba(150, 0, 0, 0.7);
+}
+
+#economy .articles article a:hover {
+    background-color: rgba(150, 0, 0, 1);
 }
 
 #entertainment {
@@ -121,7 +134,11 @@ section h2 {
 }
 
 #entertainment .articles article a {
-    background-color: rgba(0, 0, 150, 0.9);
+    background-color: rgba(0, 0, 150, 0.7);
+}
+
+#entertainment .articles article a:hover {
+    background-color: rgba(0, 0, 150, 1);
 }
 
 #tecnology {
@@ -129,5 +146,9 @@ section h2 {
 }
 
 #tecnology .articles article a {
-    background-color: rgba(150, 147, 0, 0.9);
+    background-color: rgba(150, 147, 0, 0.7);
+}
+
+#tecnology .articles article a:hover {
+    background-color: rgba(150, 147, 0, 1);
 }
