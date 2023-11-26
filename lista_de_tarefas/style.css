@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 6px;
+    background-color:rgb(64, 121, 121);
+    padding: 16px;
+    margin-top: 100px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    padding-right: 6px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+form input {
+    font-size: 20px;
+    padding: 8px;
+}
+
+form input:focus {
+    outline-color: cadetblue;
+}
+
+form button {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 8px;
+    color: #fff;
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+
+form button:hover {
+    background-color: rgb(41, 79, 81);
+}
+
+ul {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+
+ul li {
+    list-style: square;
+    text-align: center;
+    list-style-position: inside;
+    padding: 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.tarefaRiscada {
+    text-decoration: line-through;
+}
+
