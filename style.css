@@ -1,0 +1,48 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+form label {
+    padding-top: 2px;
+}
+
+.container h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-check {
+    padding-top: 10px;
+}
+
+.btn {
+    width: 120px;
+    margin-top: 16px;
+}
+
+.btn-outline-danger {
+    margin-left: 6px;
+}
+
+.btn-link {
+    float: right;
+    margin-top: 24px;
+}
+
+.error {
+    color: red;
+    display: block;
+}
+
+.central {
+    margin-left: 112px;
+    padding-top: 8px;
+}
