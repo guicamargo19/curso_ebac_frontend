@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal (Popup)</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+            Abrir modal
+        </button>
+        <div id="modal" class="modal" data-bs-backdrop="static"> <!-- data-bs-backdrop para clicar no fundo e fechar o popup -->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Título da Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed obcaecati, cupiditate facere at distinctio, saepe nihil excepturi sequi aut porro vero sapiente nam nemo! Odit, id soluta. Perferendis, labore inventore.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-danger btn" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn-success btn" data-bs-dismiss="modal">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        //Carregamento da página - DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = new bootstrap.Modal('#modal');
+            setTimeout(function() {
+                modal.show();
+            }, 2000)
+            
+        })
+    </script>
+</body>
+</html>
