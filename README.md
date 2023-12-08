@@ -1,8 +1,9 @@
-## branchs available
+## Exercício SASS
 
-Exercício de manipulação de arquivo no GitHub.
+Utilizando:
 
-- Criação e removação de branchs
-- Push e pull
-- Criação da conta GitHub
-- Lidando com problemas de repositório local e remoto
+- Encapsulamento de regras
+- Variáveis SASS
+- Mixin com argumento
+- Uso de pastas e módulos
+- Uso de funções

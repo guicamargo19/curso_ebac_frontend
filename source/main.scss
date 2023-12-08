@@ -1,0 +1,148 @@
+@use "../config/variables" as *;
+@use "../config/reset" as *;
+
+@mixin elementsSameRules($border: 6px) {
+    color: $whiteColor;
+    text-decoration: none;
+    border-radius: $border;
+}
+
+body {
+    background-color: $bodyBackgroundColor;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    .branding {
+        
+        img {
+            width: 140px;
+            border-radius: 6px;
+        }
+    }
+
+    li {
+        list-style: none;
+        font-size: 20px;
+    }
+}
+
+header {
+    background-color: $headerBackgroundColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        .menu {
+            display: flex;
+
+            li {
+                font-weight: bold;
+                margin-left: 24px;
+
+                a {
+                    @include elementsSameRules();
+                    padding: 10px;
+                    border: 1px solid $whiteColor;
+
+                    &:hover {
+                        background-color: lighten($headerBackgroundColor, 15%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    .products {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 4%;
+        width: 100%;
+
+        .product-item {
+            
+            img {
+                width: 100%;
+                border-radius: 16px;
+                height: 200px;
+            }
+
+            .product-button {
+                @include elementsSameRules(8px);
+                display: block;
+                background-color: $colorButton;
+                text-align: center;
+                padding: 8px 0;
+                margin-top: 8px;
+
+                &:hover {
+                    background-color: lighten($colorButton, 15%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    
+    .container {
+        max-width: 80%;
+    }
+
+    #herois {
+
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    
+    header {
+
+        .container {
+            display: block;
+
+            .branding {
+
+                img {
+                width: 100px;
+                margin-left: 100px;
+               }
+            }
+
+            .menu {
+                padding-left: 45px;
+                padding-top: 16px;
+            }
+        }
+    }
+
+    #herois {
+        
+        .products {
+            display: block;    
+        }
+
+        .product-item  {
+            margin-bottom: 32px;
+        }
+    }
+}
