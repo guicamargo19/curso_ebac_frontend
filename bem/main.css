@@ -1,0 +1,15 @@
+.form {
+  margin: 40px;
+}
+.form__control {
+  margin-bottom: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form__submit {
+  cursor: pointer;
+}
+.form__submit--sending {
+  cursor: wait;
+}
+
+/*# sourceMappingURL=main.css.map */
