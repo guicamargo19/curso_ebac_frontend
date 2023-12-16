@@ -22,7 +22,7 @@ Tem como afetar a aparência das páginas e até fontes diferentes, exemplo os s
 
 ##Metodologia BEM
 
-É a padronização da nomenclatura de elementos HTML para utilização nos seletores CSS.
-#Tendo classes: .classe
+É a padronização da nomenclatura de elementos HTML para utilização nos seletores CSS. Sendo:
+#Classes: .classe
 #Elemento: .classe__elemento
 #Modificador: .classe__elemento--modificador
