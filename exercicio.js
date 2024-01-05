@@ -1,19 +1,23 @@
+// CLASSE ABSTRATA
 function Veiculo(fabricante, modelo, anoModelo, anoFabricacao, cor) {
     this.fabricante = fabricante;
     this.modelo = modelo;
     this.anoModelo = anoModelo;
     this.anoFabricacao = anoFabricacao;
-    let _cor = cor;
+    let _cor = cor; // ATRIBUTO PRIVADO
 
+    // SETTER
     this.setCor = function(novaCor) {
         _cor = novaCor;
         console.log(`A cor deste veículo ${this.fabricante} ${this.modelo} foi alterada para ${_cor}`);
     }
     
+    // GETTER
     this.getCor = function() {
         console.log(`A cor do veículo ${this.modelo} é: ${_cor}`);
     }
 
+    // MÉTODOS PADRÃO
     this.acelerar = function() {
         console.log(`${this.modelo} está acelerando...`);
     }
@@ -27,6 +31,7 @@ function Veiculo(fabricante, modelo, anoModelo, anoFabricacao, cor) {
     }
 }
 
+// CLASSE HERDEIRA
 function Carro(fabricante, modelo, anoModelo, anoFabricacao, cor, portas, arCondicionado, cambio) {
     this.portas = portas;
     this.arCondicionado = arCondicionado;
@@ -46,6 +51,8 @@ function CarroCompleto(fabricante, modelo, anoModelo, anoFabricacao, cor) {
         return console.log(`${this.modelo} vai de 0 km/h à 100 km/h em 10 segundos`);
     }
 }
+
+// INSTÂNCIAS
 
 carro_simples = new CarroSimples("Ford", "Mustang", 2020, 2019, "Preto");
 //console.log(carro_simples);
