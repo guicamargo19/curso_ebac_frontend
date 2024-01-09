@@ -1,6 +1,9 @@
-# primeiro_projeto_vue
+# Módulo VueJS
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicação de comandos e funcionalidades do VueJS.
+Curso de Desenvolvimento Full Stack Python pela EBAC.
+
+Este template deve ajudar você a iniciar o desenvolvimento com Vue 3 em Vite.
 
 ## Recommended IDE Setup
 
