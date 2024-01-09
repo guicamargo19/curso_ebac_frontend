@@ -9,4 +9,4 @@ botaoEnviar === null || botaoEnviar === void 0 ? void 0 : botaoEnviar.addEventLi
 // evento de clique com o teclado, apenas com o mouse, apontando erro.
 /* botaoEnviar?.addEventListener('click', (e: KeyboardEvent) => { // ERRO
     e.preventDefault();
-    }) */ 
+    }) */
