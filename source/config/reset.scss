@@ -1,0 +1,8 @@
+@use "variaveis" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fontePrincipal;
+    box-sizing: border-box;
+}
